@@ -1,0 +1,238 @@
+body.profile-page {
+  .profile-header {
+    font-size: 13px;
+    .profile-image, .profile-details, .profile-rank-overall {
+    }
+    .profile-name {
+      font-size: 24px;
+    }
+    .profile-phone {
+      font-weight: bold;
+    }
+    .profile-misc {
+      color: $grey-link;
+    }
+    .profile-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .profile-header-center {
+        padding-left: 30px;
+      }
+    .profile-image {
+      img {
+         width: 100%;
+         height: auto;
+      }
+    }
+    .profile-ranking {
+      .rank-description {
+        width: 65px;
+        line-height: 23px;
+        height: 23px;
+        margin-bottom: 0;
+      }
+      .sprites-stars {
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 0;
+      }
+    }
+    .score {
+      border: 1px solid $grey-link;
+
+      .score-text {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: #999;
+        text-align: center;
+      }
+      .score-stars {
+        margin-left: 30px;
+        margin-bottom: 5px;
+        background: image-url("gesamtbewertung.png");
+        background-position: top left;
+        background-repeat: no-repeat;
+        height: 24px;
+      }
+    }
+    .worktime-header {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .worktimes {
+      span {
+        width: 75px;
+        display: inline-block;
+      }
+    }
+    .join, .evaluate, .favorites, .contact, .blacklist {
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+    .join, .evaluate, .favorites {
+      @extend %tab-gradient-grey;
+      color: $nice-grey;
+      border: $grey-border;
+    }
+    .contact, .blacklist {
+      color: #fff;
+    }
+    .join {
+      margin-top: 40px;
+    }
+    .contact {
+      @extend %btn-gradient-red;
+    }
+    .blacklist {
+      @extend %tab-gradient-black;
+    }
+    .favorites {
+      margin-bottom: 20px;
+    }
+    .distance, .address-header span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .distance {
+      text-indent: 5px;
+      background: image-url("drop.png") no-repeat;
+    }
+
+  }
+  .profile-details {
+    .profile-detail-menu {
+      height: 40px;
+      cursor: pointer;
+      color: $grey-link;
+      border: $grey-border;
+      margin-top: 10px;
+      li {
+        border-right: $grey-border;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin-bottom: 10px;
+        @extend %tab-gradient-grey;
+        &:last-child {
+          border-right: none;
+        }
+        &.profile-details-active {
+          @extend %tab-gradient-grey-inset;
+        }
+      }
+
+    }
+    .profile-detail-tab {
+      display: none;
+      &.profile-detail-personal {
+        display: block;
+      }
+    }
+    .profile-detail-service-list {
+      li {
+        p {
+          margin-bottom: 0;
+          &:nth-of-type(1) {
+            color: $grey-link;
+          }
+        }
+      }
+      
+    }
+
+    .profile-detail-gallery {
+      img {
+        margin-bottom: 20px;
+      }
+    }
+    
+  }
+  .profile-top-items {
+    li {
+      height: 25px;
+      a {
+        color: #000;
+        display: inline-block;
+        font-weight: bold;
+        &.arrow {
+          color: $grey-link;
+          background: image-url("morearr.jpg");
+          background-repeat: no-repeat;
+          background-position: left;
+          width: 60px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .profile-top-header {
+    .fivestars {
+      background-color: $nice-red;
+      padding: 5px;
+      p {
+        background: image-url("gesamtbewertung.png");
+        background-position: top left;
+        background-repeat: no-repeat;
+        margin: 0;
+        color: #fff;
+        text-align: right;
+        height: 24px;
+        line-height: 24px;
+        font-weight: bold;
+        span {
+          color: #FFD700;
+        }
+      }
+    }
+    .top5-type {
+      color: #fff;
+      background-color: #000;
+      font-size: 16px;
+      font-weight: 200;
+      padding: 5px 0 5px 10px;
+    }
+  }
+  .profile-detail-gallery-slider {
+    img {
+      cursor: pointer;
+    }
+    &.gallery-hidden {
+      visibility: hidden;
+    }
+  }
+
+  .link-slider {
+    &.gallery-hidden {
+      margin-top: -200px;
+    }
+  } 
+
+  @media (max-width: 767px) {
+    .profile-details {
+      border: none;
+      li {
+        /*
+        border: $grey-border;
+        */
+      }
+    }
+    .profile-image {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+
+  /** LÖSCHEN **/
+  .gmap-canvas {
+    height: 250px;
+    background: $red-link;
+  }
+}

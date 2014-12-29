@@ -1,0 +1,16 @@
+.icon-sprites {
+  background: image-url("sprites_icons2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.sprites-stars {
+  background: image-url("sprites_stars.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 17px;
+  margin: 3px 0;
+  &.stars-5 {
+    background-position: 0 0;
+  }
+}
+
+.content-shadow {
+  @include box-shadow(#8C8C8C -0.3px 1px 8px);
+}

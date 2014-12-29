@@ -1,0 +1,36 @@
+.contact-page {
+  padding-top: 40px;
+  &.form-row {
+    background: image-url("contact_form_background_2.png") no-repeat 95% 95%;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  ol {
+    font-size: 13px;
+  }
+  .contact-form {
+    margin-top: 30px;
+    .control-label {
+    }
+    #siimage {
+      margin-top: 15px;
+      & + a {
+        color: #000;
+        font-size: 12px;
+        text-decoration: underline;
+        font-weight: normal;
+      }
+    }
+    #captcha_code {
+      & + button {
+        margin-top: 40px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &.form-row {
+      background-image: none;
+    }
+  }
+}

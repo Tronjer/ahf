@@ -1,0 +1,69 @@
+%btn-gradient-red {
+  background-color: #fb0000; // Old browsers
+  @include filter-gradient(#fb0000, #a30000, vertical); // IE6-8
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #fb0000 0%,#e80000 24%,#ca0000 34%,#aa0000 61%,#a30000 71%,#a30000 100%));
+}
+%btn-gradient-dark-grey {
+  background-color: #d5d5d5; // Old browsers
+  @include filter-gradient(#d5d5d5, #a0a0a0, vertical); // IE6-8
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #d5d5d5 0%,#cccccc 43%,#c8c8c8 48%,#b8b8b8 52%,#b3b3b3 57%,#acacac 78%,#a0a0a0 100%));
+}
+%navbar-gradient {
+  background-color: #fefefe; // Old browsers
+  @include filter-gradient(#fefefe, #e7e7e7, vertical); // IE6-8
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #fefefe 0%,#e7e7e7 100%));
+}
+%grey-hover {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #dcdcdc; // Old browsers
+  @include filter-gradient(#dcdcdc, #b4b4b4, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #dcdcdc 0%,#d8d8d8 37%,#cdcdcd 51%,#c7c7c7 66%,#bfbfbf 77%,#bfbebf 81%,#bbbbbb 84%,#b4b4b4 100%));
+}
+%yellow-hover {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #feee5d; // Old browsers
+  @include filter-gradient(#feee5d, #ffa959, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #feee5d 0%,#ffe768 3%,#ffde7a 6%,#ffd77b 8%,#fbd87c 11%,#ffd677 14%,#ffd37d 17%,#ffc976 39%,#feaf60 81%,#ffac5f 86%,#fcae5b 92%,#ffa85a 94%,#fdaa5c 97%,#ffa959 100%));
+}
+%tab-gradient-yellow {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #fbfbef; // Old browsers
+  @include filter-gradient(#fbfbef, #fcd973, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #fbfbef 0%,#f7f8d6 3%,#f4f4c2 6%,#f2f2b6 8%,#f5eba4 33%,#f7e8a3 42%,#ffdf92 53%,#ffdd8c 58%,#ffdc8a 64%,#ffd98f 67%,#ffda85 69%,#ffdb85 72%,#ffdc7e 75%,#fcd183 78%,#ffd88a 81%,#ffd283 83%,#fcd97b 86%,#ffd77b 89%,#fcd878 94%,#ffd577 97%,#fcd973 100%));
+}
+%tab-gradient-grey {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #f8f8f8; // Old browsers
+  @include filter-gradient(#f8f8f8, #dbdbdb, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #f8f8f8 0%,#f0f0f0 41%,#e4e4e4 56%,#dbdbdb 100%));
+}
+%tab-gradient-grey-inset {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #858585; // Old browsers
+  @include filter-gradient(#858585, #cacaca, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #858585 0%,#9f9f9f 11%,#ababab 20%,#d8d8d8 83%,#d9d9d9 89%,#d4d4d4 94%,#cacaca 100%));
+}
+%tab-gradient-black {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #4c4c4c; // Old browsers
+  @include filter-gradient(#4c4c4c, #131313, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%));
+}
+%neg-spacer-left {
+  margin-left: -15px;
+}
